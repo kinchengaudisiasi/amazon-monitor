@@ -2,8 +2,8 @@ name: Amazon Rank 24/7 Tracker
 
 on:
   schedule:
-    # 这里的 Cron 表达式代表每 6 小时执行一次 (UTC 时间)
-    - cron: '0 */6 * * *'
+    # 这里的 Cron 表达式代表每 1 小时执行一次 (UTC 时间)
+    - cron: '0 * * * *'
   workflow_dispatch: # 支持手动点击运行
 
 jobs:
