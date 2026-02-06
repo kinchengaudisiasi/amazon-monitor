@@ -7,7 +7,7 @@ from datetime import datetime
 # 配置区
 API_KEY = os.getenv('SCRAPERAPI_KEY')
 KEYWORDS = ["resound hearing aid domes", "phonak hearing aid domes", "resound hearing aid accessories", "phonak hearing aid accessories"]
-ZIP_CODES = ["90001", "10001", "33101"]
+ZIP_CODES = ["90001"]
 
 def parse_amazon_page(html_content, zip_code, keyword):
     soup = BeautifulSoup(html_content, 'html.parser')
